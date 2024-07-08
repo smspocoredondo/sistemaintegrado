@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Secretaria Municipal de Saúde</title>
+    <link rel="shortcut icon" href="logo_poco.ico">
+</head>
+<div class="top-header">
+        <img src="logo_poco.png" style="height: 70px; color:white">
+        <h1>Secretaria Municipal de Saúde de Poço Redondo</h1>
+    </div>
+    <body>
+    <section class="form-container">
+        <div class="container">
+            <form id="meuFormulario" action="https://api.sheetmonkey.io/form/3Hx2B4h5g2kWrXRncMWGUM" method="post">
+                
+                <h2>Controle de Consultas com Especialistas</h2><br>
+                <fieldset>
+                    
+                    <legend>Dados do Usuário:</legend>
+                    <div class="form-outer">
+                        <label>Nome</label>
+                        <input type="text" name="nome" required>
+                    </div>
+                    <div class="form-outer">
+                        <label>Endereço</label>
+                        <input type="text" name="endereco" required>
+                    </div>
+                    <div class="form-outer">
+                        <label>Data de Nascimento</label>
+                        <input type="date" name="nascimento" required>
+                    </div><br>
+                    
+                    <div class="gnero-options">
+                        Gênero:
+                        <input type="radio" class="gnero-checkbox" id="masculino" name="gnero" value="Masculino">
+                        <label for="masculino">Masculino</label><br>
+                        <input type="radio" class="gnero-checkbox" id="feminino" name="gnero" value="Feminino">
+                        <label for="feminino">Feminino</label><br>
+                        <input type="radio" class="gnero-checkbox" id="outro" name="gnero" value="Outro">
+                        <label for="outro">Outro</label>
+                    </div>
+                </fieldset><br>
+            
+                <fieldset class="horizontal-fieldset">
+                    <legend>Solicitação da Consulta:</legend>
+                    <div class="field-group">
+                        <label for="cpf">Cns ou Cpf:</label>
+                        <input type="text" name="cpf" id="cpf" maxlength="19" required>
+                    </div>
+                    <div class="form-cons">
+                        <label>Consulta com:</label>
+                        <select name="Consulta" required>
+                            <option>:: selecione ::</option>
+                            <option>Ortopedista</option>
+                            <option>Pediatra</option>
+                            <option>Psiquiatra</option>
+                        </select>
+                    </div><br>
+                    <div class="field-group">
+                        <label for="consulta">Data da Consulta:</label>
+                        <input type="date" name="consulta" required>
+                    </div>
+                </fieldset><br><br>
+    
+                <div class="btn button">
+                    <button name="btn" class="button separated-buttons">Marcar Consulta</button>
+                    <button type="button" class="button separated-buttons" onclick="sairDoSistema()">Sair do sistema</button>
+                </div><br><br>
+                Secretaria Municipal de Saúde - Avenida Alcino Alves Costa - centro 49810000 - smspocoredondo@gmail.com
+                
+
+        </form>
+      
+  
+</section>
+
+    <!-- Seu conteúdo HTML aqui -->
+
+    <script src="script.js"></script>
+</body>
+</html>
