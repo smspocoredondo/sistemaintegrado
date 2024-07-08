@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 function sairDoSistema() {
     // Redireciona para a página inicial
-    window.location.href = "agendalogin.html";
+    window.location.href = "index.html";
 }
 
 
