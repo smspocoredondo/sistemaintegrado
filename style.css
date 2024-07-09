@@ -214,3 +214,11 @@ form input[type=submit]{
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+@media screen and (max-width: 768px){
+     .container{
+         display: block;
+         background-image: none;
+     }
+ }
+     
