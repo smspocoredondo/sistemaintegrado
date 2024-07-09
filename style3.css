@@ -91,6 +91,16 @@ button {
    
 }
 
+.form-doc{
+    display: flex;
+    flex-direction: column; /* Muda a direção para linha */
+    align-items:baseline; /* Centraliza os itens verticalmente */
+    justify-content:flex-start; /* Alinha os itens à direita */
+    width: 45%;
+    margin-bottom: -3px; /* Mantém algum espaçamento entre os grupos */
+    font-size: 14px;
+}
+
 .form-outer {
     display: block;
     flex-direction: row; /* Muda a direção para linha */
@@ -154,7 +164,7 @@ fieldset {
     display: flex; /* Usa Flexbox para alinhamento */
     flex-direction:column; /* Organiza os filhos em coluna */
     justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    align-items: lex-start; /* Centraliza horizontalmente */
 }
 
 legend {
