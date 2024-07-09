@@ -10,6 +10,8 @@ body {
     background-repeat: no-repeat; 
     background-image: url('poco.jpg');
     background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
 }
 
