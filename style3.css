@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 110vh; /* Garante que o body ocupe pelo menos a altura da viewport */
+    min-height: 120dvh; /* Garante que o body ocupe pelo menos a altura da viewport */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
