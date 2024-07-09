@@ -225,5 +225,11 @@ input[type="date"]:focus {
 .field-group label{
         font-size: 14px;
 }
- 
+ @media screen and (max-width: 768px){
+     .container{
+         display: block;
+         background-image: none;
+     }
+ }
+     
  
