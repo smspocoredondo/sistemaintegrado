@@ -12,6 +12,9 @@ body {
         place-items: center;
         min-height: 70vh; /* Certifica-se de que o body tenha altura mínima igual à altura da viewport */
         margin: 0; /* Remove margens padrão */
+        overflow-y: hidden;
+        overflow-x: hidden;
+    
     }
 
     .top-header h1 {
