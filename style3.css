@@ -159,7 +159,7 @@ fieldset {
     border: none;
     padding: 10px;
     width: 95%;
-    background-color: #f9f9f9;
+    background-color: #d8d9da;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     display: flex; /* Usa Flexbox para alinhamento */
     flex-direction:column; /* Organiza os filhos em coluna */
