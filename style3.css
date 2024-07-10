@@ -243,4 +243,36 @@ input[type="date"]:focus {
      }
  }
      
- 
+ @media (max-width: 600px) {
+    nav, header, footer {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav, header, footer {
+        padding: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+.botao-abrir-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f52b08;
+    color: #fff;
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 14px;
+    transition: background-color 0.3s ease; /* Transição suave para mudança de cor de fundo */
+}
+
+.botao-abrir-link:hover {
+    background-color: #5f0505; /* Cor de fundo ao passar o mouse */
+}
