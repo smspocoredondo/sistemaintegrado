@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
-    margin: 0px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
@@ -17,13 +17,16 @@ body {
     box-sizing: border-box;
     overflow-y: hidden;
     overflow-x: hidden;
+    box-sizing: border-box;
+    background-image: url('Fundo-28-01-2003.gif');
+
     }
 
     .top-header h1 {
         margin: 10px; /* Remove a margem padrão do h1 */
         font-size: 24px; /* Ajusta o tamanho da fonte */
         color: #175fcc; /* Cor do texto */
-        width: 150%;
+        width: 100%;
         text-align: center; /* Centraliza o texto dentro do h1 */
        
     }
@@ -35,7 +38,7 @@ body {
     }
 
     .top-header {
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100%;
         padding: 8px 218px 10px 15px;
@@ -57,7 +60,7 @@ h2{
     font-family: Arial, sans-serif;
     margin: 2px; /* Remove a margem padrão do h1 */
     font-size: 24px; /* Ajusta o tamanho da fonte */
-    color: #0a539c; /* Cor do texto */
+    color: #ffffff; /* Cor do texto */
     width: 95%;
     text-align: center; /* Centraliza o texto dentro do h1 */ 
 }
@@ -90,7 +93,6 @@ button {
     flex-direction:row; /* Se os botões estiverem empilhados verticalmente */
    
 }
-
 .form-doc{
     display: flex;
     flex-direction: column; /* Muda a direção para linha */
@@ -99,8 +101,8 @@ button {
     width: 45%;
     margin-bottom: -3px; /* Mantém algum espaçamento entre os grupos */
     font-size: 14px;
+    color: #ffffff;
 }
-
 .form-outer {
     display: block;
     flex-direction: row; /* Muda a direção para linha */
@@ -109,6 +111,8 @@ button {
     width: 90%;
     margin-bottom: -3px; /* Mantém algum espaçamento entre os grupos */
     font-size: 14px;
+    color: #ffffff;
+
 }
 
 .form-cons {
@@ -119,6 +123,8 @@ button {
     width: 100%;
     margin-bottom: 12px; /* Mantém algum espaçamento entre os grupos */
     font-size: 14px;
+    color: #ffffff;
+
 }
 
 .input-container {
@@ -145,7 +151,7 @@ button {
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #ffffff;
-    color: #020202;
+    color: #0e0d0d;
     outline: none;
     width: 48%;
 }
@@ -156,21 +162,24 @@ button {
 }
 
 fieldset {
-    border: none;
+    border:#000000;
     padding: 10px;
     width: 95%;
-    background-color: #d8d9da;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #2f302f;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
     display: flex; /* Usa Flexbox para alinhamento */
     flex-direction:column; /* Organiza os filhos em coluna */
     justify-content: center; /* Centraliza verticalmente */
-    align-items: lex-start; /* Centraliza horizontalmente */
+    align-items:baseline; /* Centraliza horizontalmente */
+    color: #ffffff;
+    border-radius: 15px;
+
 }
 
 legend {
     font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
 input[type="text"] {
@@ -236,14 +245,8 @@ input[type="date"]:focus {
 .field-group label{
         font-size: 14px;
 }
- @media screen and (max-width: 768px){
-     .container{
-         display: block;
-         background-image: none;
-     }
- }
-     
- @media (max-width: 600px) {
+
+@media (max-width: 600px) {
     nav, header, footer {
         padding: 10px;
     }
@@ -271,6 +274,10 @@ input[type="date"]:focus {
     text-decoration: none; /* Remove o sublinhado */
     border-radius: 14px;
     transition: background-color 0.3s ease; /* Transição suave para mudança de cor de fundo */
+}
+
+.botao-abrir-link:hover {
+    background-color: #5f0505; /* Cor de fundo ao passar o mouse */
 }
 
 .botao-abrir-link:hover {
