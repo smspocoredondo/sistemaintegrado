@@ -6,7 +6,7 @@ body {
     align-items:center;
     height: 80vh;
     background-size:30%;
-    background-position: left;
+    background-position: center center;
     background-repeat: no-repeat; 
     background-image: url('poco.jpg');
     background-size: cover;
