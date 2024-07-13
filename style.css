@@ -14,6 +14,7 @@ body {
         margin: 0; /* Remove margens padrão */
         overflow-y: hidden;
         overflow-x: hidden;
+        background-image: url('Fundo-28-01-2003.gif');
     
     }
 
