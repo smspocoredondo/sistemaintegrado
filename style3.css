@@ -89,8 +89,9 @@ button {
 .btn {
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction:row; /* Se os botões estiverem empilhados verticalmente */
+    margin-left: 200px
    
 }
 .form-doc{
