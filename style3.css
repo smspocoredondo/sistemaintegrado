@@ -165,7 +165,7 @@ button {
 
 fieldset {
     border:#000000;
-    padding: 10px;
+    padding: 10px 15px 10px;
     width: 95%;
     background-color: #2f302f;
     box-shadow: 0 0 20px rgba(0,0,0,0.6);
@@ -174,7 +174,7 @@ fieldset {
     justify-content: center; /* Centraliza verticalmente */
     align-items:baseline; /* Centraliza horizontalmente */
     color: #ffffff;
-    border-radius: 15px;
+    border-radius: 7px;
 
 }
 
