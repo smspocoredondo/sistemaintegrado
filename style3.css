@@ -171,7 +171,6 @@ fieldset {
     padding: 10px;
     width: 95%;
     background-color: #e0e0e0;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
     display: flex; /* Usa Flexbox para alinhamento */
     flex-direction:column; /* Organiza os filhos em coluna */
     justify-content: center; /* Centraliza verticalmente */
