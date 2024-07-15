@@ -11,16 +11,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 107dvh; /* Garante que o body ocupe pelo menos a altura da viewport */
-    margin: 0;
+    min-height: 100dvh; /* Garante que o body ocupe pelo menos a altura da viewport */
+    margin: 10px;
     padding: 0;
     box-sizing: border-box;
     overflow-y: hidden;
     overflow-x: hidden;
     box-sizing: border-box;
-    background-image: url('Fundo-28-01-2003.gif');
-    background-position: center center;
-
+    background-color: rgb(252, 252, 252);
+   
     }
 
     .top-header h1 {
@@ -53,7 +52,8 @@ body {
 
 /* Altera a cor do botão quando passado o mouse */
 button:hover {
-    background-color: #8aa2bd;
+    background-color: #054e3c;
+    transition: background-color 0.3s ease;
 }
 
 h2{
@@ -61,7 +61,7 @@ h2{
     font-family: Arial, sans-serif;
     margin: 2px; /* Remove a margem padrão do h1 */
     font-size: 24px; /* Ajusta o tamanho da fonte */
-    color: #ffffff; /* Cor do texto */
+    color: #0a449b; /* Cor do texto */
     width: 95%;
     text-align: center; /* Centraliza o texto dentro do h1 */ 
 }
@@ -77,6 +77,8 @@ button {
     font-size: 14pt;
     cursor: pointer;
     margin-right: 35px;
+    transition: background-color 0.3s ease;
+    background-position: right;
 }
 
 .buttons-container {
@@ -89,10 +91,11 @@ button {
 
 .btn {
     display:flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: right;
+    align-items: center;
     flex-direction:row; /* Se os botões estiverem empilhados verticalmente */
-    margin-left: 200px
+    transition: background-color 0.3s ease;
+    width: 95%;
    
 }
 .form-doc{
@@ -103,7 +106,7 @@ button {
     width: 45%;
     margin-bottom: -3px; /* Mantém algum espaçamento entre os grupos */
     font-size: 14px;
-    color: #ffffff;
+    color: #000000;
 }
 .form-outer {
     display: block;
@@ -113,7 +116,7 @@ button {
     width: 90%;
     margin-bottom: -3px; /* Mantém algum espaçamento entre os grupos */
     font-size: 14px;
-    color: #ffffff;
+    color: #000000;
 
 }
 
@@ -125,7 +128,7 @@ button {
     width: 100%;
     margin-bottom: 12px; /* Mantém algum espaçamento entre os grupos */
     font-size: 14px;
-    color: #ffffff;
+    color: #000000;
 
 }
 
@@ -165,22 +168,22 @@ button {
 
 fieldset {
     border:#000000;
-    padding: 10px 15px 10px;
+    padding: 10px;
     width: 95%;
-    background-color: #2f302f;
-    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    background-color: #e0e0e0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
     display: flex; /* Usa Flexbox para alinhamento */
     flex-direction:column; /* Organiza os filhos em coluna */
     justify-content: center; /* Centraliza verticalmente */
     align-items:baseline; /* Centraliza horizontalmente */
-    color: #ffffff;
-    border-radius: 7px;
-
+    color: #080808;
+    border-radius: 5px;
+   
 }
 
 legend {
     font-size: 16px;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -196,7 +199,7 @@ input[type="text"] {
 }
 
 input[type="date"] {
-    width: 30%;
+    width: 35%;
     padding: 6px; /* Aumenta o padding para melhorar a usabilidade */
     font-size: 14px; /* Define o tamanho da fonte */
     border: 1px solid #ccc; /* Define a cor e espessura da borda */
@@ -269,17 +272,13 @@ input[type="date"]:focus {
 }
 
 .botao-abrir-link {
-    display: inline-block;
-    padding: 15px 30px;
+    display: inline-flex;
+    padding: 12px 30px;
     background-color: #f52b08;
     color: #fff;
     text-decoration: none; /* Remove o sublinhado */
-    border-radius: 14px;
+    border-radius: 8px;
     transition: background-color 0.3s ease; /* Transição suave para mudança de cor de fundo */
-}
-
-.botao-abrir-link:hover {
-    background-color: #5f0505; /* Cor de fundo ao passar o mouse */
 }
 
 .botao-abrir-link:hover {
