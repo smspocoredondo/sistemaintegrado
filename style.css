@@ -8,15 +8,9 @@
 }
 
 body {
-        display: grid;
-        place-items: center;
-        min-height: 70vh; /* Certifica-se de que o body tenha altura mínima igual à altura da viewport */
-        margin: 0; /* Remove margens padrão */
-        overflow-y: hidden;
-        overflow-x: hidden;
-        background-image: url('Fundo-28-01-2003.gif');
-    
-    }
+    max-width: 100vw;
+    overflow-x: hidden;
+}
 
     .top-header h1 {
         margin: 0; /* Remove a margem padrão do h1 */
@@ -26,7 +20,7 @@ body {
         text-align: center; /* Centraliza o texto dentro do h1 */
     }
 
-    h2{
+    h1{
         font-family: Arial, sans-serif;
         margin: 0; /* Remove a margem padrão do h1 */
         font-size: 24px; /* Ajusta o tamanho da fonte */
@@ -62,9 +56,10 @@ body {
 
     .container {
         position: absolute;
-        width: 35%;
+        width: 50%;
         margin: 0 auto;
         padding: 20px;
+       
     }
 
 form{
@@ -72,7 +67,8 @@ form{
     max-width: 800px;
     height: 400px;
     padding: 8px;
-    
+    background-position: right top;
+
 }
 
 .form-container {
@@ -96,7 +92,7 @@ form .input-single label{
 }
 
 form .input-single .input{
-    width: 100%;
+    width: 60%;
     border: 0;
     border-bottom: 2px solid #808080;
     padding: 5px;
@@ -118,24 +114,25 @@ form .input-single .input:valid ~ label{
 }
 
 .btn{
-    width: 100%;
+    width: 60%;
     text-align: center;
+    align-items:center;
 }
 
 form input[type=submit]{
-    padding: 10px 40px;
+    padding: 10px 45px;
     border: 0;
     border-radius: 10px;
-    background-color: #2D5966;
+    background-color: #0a4702;
     color: #fff;
     font-size: 14pt;
     cursor: pointer;
 }
 .button [type="button"]{
-    padding: 10px 40px;
+    padding: 10px;
     border: 0;
     border-radius: 10px;
-    background-color: #2D5966;
+    background-color: #0a4702;
     color: #fff;
     font-size: 14pt;
     cursor: pointer;
@@ -196,7 +193,7 @@ form input[type=submit]{
 }
  button{
     padding: 15px 50px;
-    background-color: #01584a;
+    background-color: #000807;
     color: white;
     border: none;
     border-radius: 12px;
@@ -210,7 +207,6 @@ form input[type=submit]{
     padding: 8px;
     
 }
-
 
 .form-outer{
     padding: 10px 15px;
@@ -226,3 +222,14 @@ form input[type=submit]{
      }
  }
      
+ footer {
+    background-color: #175fcc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
