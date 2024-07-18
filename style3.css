@@ -58,11 +58,11 @@ button:hover {
 
 h2{
     padding: 8px;
-    font-family: Arial, sans-serif;
-    margin: 2px; /* Remove a margem padrão do h1 */
+    font-family: 'Outfit', sans-serif;
+    margin: 5px; /* Remove a margem padrão do h1 */
     font-size: 24px; /* Ajusta o tamanho da fonte */
     color: #0a449b; /* Cor do texto */
-    width: 95%;
+    width: 100%;
     text-align: center; /* Centraliza o texto dentro do h1 */ 
 }
 
@@ -91,11 +91,11 @@ button {
 
 .btn {
     display:flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     flex-direction:row; /* Se os botões estiverem empilhados verticalmente */
     transition: background-color 0.3s ease;
-    width: 95%;
+    
    
 }
 .form-doc{
@@ -105,7 +105,7 @@ button {
     justify-content:flex-start; /* Alinha os itens à direita */
     width: 45%;
     margin-bottom: -3px; /* Mantém algum espaçamento entre os grupos */
-    font-size: 14px;
+    font-size: 17px;
     color: #000000;
 }
 .form-outer {
@@ -114,8 +114,8 @@ button {
     align-items: center; /* Centraliza os itens verticalmente */
     justify-content:right; /* Alinha os itens à direita */
     width: 90%;
-    margin-bottom: -3px; /* Mantém algum espaçamento entre os grupos */
-    font-size: 14px;
+    margin-bottom: -10px; /* Mantém algum espaçamento entre os grupos */
+    font-size: 17px;
     color: #000000;
 
 }
@@ -127,7 +127,7 @@ button {
     justify-content:right; /* Alinha os itens à direita */
     width: 100%;
     margin-bottom: 12px; /* Mantém algum espaçamento entre os grupos */
-    font-size: 14px;
+    font-size: 17px;
     color: #000000;
 
 }
@@ -151,14 +151,14 @@ button {
 
 /* Estilização geral para o elemento select */
 .form-cons select {
-    font-size: 14px;
+    font-size: 18px;
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #ffffff;
     color: #0e0d0d;
     outline: none;
-    width: 48%;
+    width: 50%;
 }
 
 /* Fazendo com que as opções estejam sempre em letras maiúsculas */
@@ -169,14 +169,15 @@ button {
 fieldset {
     border:#000000;
     padding: 10px;
-    width: 95%;
+    width: 110%;
     background-color: #e0e0e0;
     display: flex; /* Usa Flexbox para alinhamento */
-    flex-direction:column; /* Organiza os filhos em coluna */
+    /*flex-direction:column; /* Organiza os filhos em coluna */
     justify-content: center; /* Centraliza verticalmente */
     align-items:baseline; /* Centraliza horizontalmente */
     color: #080808;
-    border-radius: 5px;
+    border-radius: 2px;
+    font-size: 17px;
    
 }
 
@@ -187,9 +188,9 @@ legend {
 }
 
 input[type="text"] {
-    width: 60%;
+    width: 97%;
     padding: 6px; /* Aumenta o padding para melhorar a usabilidade */
-    font-size: 14px; /* Define o tamanho da fonte */
+    font-size: 19px; /* Define o tamanho da fonte */
     border: 1px solid #ccc; /* Define a cor e espessura da borda */
     border-radius: 4px; /* Arredonda as bordas para um visual mais agradável */
     background-color: #ffffff; /* Define a cor de fundo */
@@ -198,9 +199,9 @@ input[type="text"] {
 }
 
 input[type="date"] {
-    width: 35%;
+    width: 40%;
     padding: 6px; /* Aumenta o padding para melhorar a usabilidade */
-    font-size: 14px; /* Define o tamanho da fonte */
+    font-size: 19px; /* Define o tamanho da fonte */
     border: 1px solid #ccc; /* Define a cor e espessura da borda */
     border-radius: 4px; /* Arredonda as bordas para um visual mais agradável */
     background-color: #f9f9f9; /* Define a cor de fundo */
@@ -217,13 +218,13 @@ input[type="date"]:focus {
 .gnero-checkbox + label {
     display: inline-flex; /* Faz com que a label se comporte como um item flexível */
     align-items: center; /* Centraliza os itens verticalmente dentro da label */
-    margin-right: 10px; /* Adiciona um pouco de espaço à direita do checkbox */
+    margin-right: 15px; /* Adiciona um pouco de espaço à direita do checkbox */
 }
 
 .gnero-options {
     display: flex;
     align-items: center; /* Alinha os itens verticalmente no centro */
-    gap: 10px; /* Espaçamento entre os itens */
+    gap: 15px; /* Espaçamento entre os itens */
 }
 
 .horizontal-fieldset {
@@ -272,14 +273,30 @@ input[type="date"]:focus {
 
 .botao-abrir-link {
     display: inline-flex;
-    padding: 12px 30px;
+    padding: 11px 29px;
     background-color: #f52b08;
     color: #fff;
     text-decoration: none; /* Remove o sublinhado */
-    border-radius: 8px;
+    border-radius: 10px;
     transition: background-color 0.3s ease; /* Transição suave para mudança de cor de fundo */
+    font-size: 18px;
 }
 
+.botao-abrir-link:hover {
+    background-color: #5f0505; /* Cor de fundo ao passar o mouse */
+}
+
+footer {
+    background-color: #175fcc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
 .botao-abrir-link:hover {
     background-color: #5f0505; /* Cor de fundo ao passar o mouse */
 }
