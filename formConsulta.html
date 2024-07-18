@@ -4,7 +4,7 @@
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style3.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Secretaria Municipal de Saúde</title>
@@ -14,44 +14,55 @@
         <img src="logo_poco.png" style="height: 70px; color:white">
         <h1>Secretaria Municipal de Saúde de Poço Redondo</h1>
     </div>
+    
     <body>
+         
     <section class="form-container">
         <div class="container">
             <form id="meuFormulario" action="https://api.sheetmonkey.io/form/3Hx2B4h5g2kWrXRncMWGUM" method="post">
-                <h2>Controle de Consultas com Especialistas</h2>
-                <fieldset>
-                   
+                <h2>Marcar Consultas com Especialistas</h2>
+                
+                   <fieldset class="horizontal-fieldset">
                     <legend>Dados do Usuário:</legend>
                     <div class="form-outer">
                         <label>Nome</label>
                         <input type="text" name="nome" autofocus required>
                     </div>
-                    <div class="form-outer">
+                      <div class="form-outer">
                         <label>Data de Nascimento</label>
                         <input type="date" name="nascimento" required>
+                    </fieldset>
                     </div>
+
+                    <fieldset class="horizontal-fieldset">
                     <div class="form-outer">
                         <label>Endereço</label>
                         <input type="text" name="endereco" required>
+                   
                     </div>
+
                     <div class="form-doc">
                         <label for="celular">Celular</label>
                         <input type="text" name="celular" id="celular" maxlength="11" required>
-                    </div><br>
+                    </div>
+                   
                     <div class="form-doc">
                         <label for="cpf">Cns/Cpf</label>
                         <input type="text" name="cpf" id="cpf" maxlength="19" required>
+                    </fieldset>
                     </div><br>
-                    <div class="gnero-options">
-                        Gênero:
+                    <Fieldset class="genero">
+                       <legend>Gênero</legend> 
+                    <div class="gnero-options">  
                         <input type="radio" class="gnero-checkbox" id="masculino" name="gnero" value="Masculino">
                         <label for="masculino">Masculino</label><br>
                         <input type="radio" class="gnero-checkbox" id="feminino" name="gnero" value="Feminino">
                         <label for="feminino">Feminino</label><br>
                         <input type="radio" class="gnero-checkbox" id="outro" name="gnero" value="Outro">
                         <label for="outro">Outro</label>
-                    </div>
-                </fieldset><br>
+                     </Fieldset>  
+                    </div><br>
+                
             
                 <fieldset class="horizontal-fieldset">
                     <legend>Solicitação da Consulta:</legend>
@@ -61,12 +72,12 @@
                             <option>:: selecione ::</option>
                             <option>Ortopedista</option>
                             <option>Neuropediatra</option>
-                            <option>Psiquiatra</option>
+                             <option>Psiquiatra</option>
                             <option>Pequenas Cirurgias</option>
-                            
+                           
                         </select>
                     </div><br>
-                    <div class="field-group">
+                    <div class="form-cons">
                         <label for="consulta">Data da Consulta:</label>
                         <input type="date" name="consulta" required>
                     </div>
@@ -76,19 +87,20 @@
                     <button name="btn" class="button separated-buttons">Marcar Consulta</button>
                     <button type="button" class="button separated-buttons" onclick="sairDoSistema()">Sair do sistema</button>
                     <a href="https://docs.google.com/spreadsheets/d/18b0ECUihBM8BnQf-XrPx8iuMFpoBiMgdQVXJzUXUKDc/edit?gid=1880559645#gid=1880559645" target="_blank" class="botao-abrir-link">
-                    Abrir Lista
-                </a>
+                    Abrir Lista</a>
+                    
                 </div><br><br>
-                Secretaria Municipal de Saúde - Avenida Alcino Alves Costa - centro 49810000 - smspocoredondo@gmail.com
-                
-
         </form>
       
-  
 </section>
 
     <!-- Seu conteúdo HTML aqui -->
 
     <script src="script.js"></script>
+    <footer>
+        <div class="footer-content">
+            <span>&copy; 2024 - I-infotec - Desenvolvimentos de Softwares</span>
+        </div>
+    </footer>
 </body>
 </html>
